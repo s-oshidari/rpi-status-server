@@ -26,8 +26,8 @@ button.setOnPushedCallback(buttonOnPushed);
 
 const onPackageDelivered = () => {
   led.on();
-  led.blink();
   music.playAny();
+  led.blink();
 };
 
 
