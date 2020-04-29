@@ -15,9 +15,9 @@ module.exports = class led {
   }
 
   off() {
+    clearInterval(this.blinkTimer);
     this.state = 0;
     this.setState();
-    clearInterval(this.blinkTimer);
   }
 
   toggle() {
