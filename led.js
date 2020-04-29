@@ -28,7 +28,7 @@ module.exports = class led {
   blink() {
     this.blinkTimer = setInterval(() => {
       this.toggle();
-    }, 300);
+    }, 100);
   }
 
   setState() {
