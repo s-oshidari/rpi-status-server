@@ -43,6 +43,16 @@ app.get("/package/delivered", (req, resp) => {
   onPackageDelivered();
 });
 
+app.get("/led/on", (req, resp) => {
+  resp.sendStatus(200);
+  led.on();
+});
+
+app.get("/led/blink", (req, resp) => {
+  resp.sendStatus(200);
+  led.blink();
+});
+
 app.listen(3000, () => {
   console.log("Listening on port 3000");
 });
