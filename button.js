@@ -2,7 +2,7 @@ const pigpio = require('pigpio');
 const Gpio = pigpio.Gpio;
 
 
-module.exports = class button {
+module.exports = class Button {
 
   constructor(pin) {
     this.setupButton(pin);

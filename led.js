@@ -2,7 +2,7 @@ const pigpio = require('pigpio');
 const Gpio = pigpio.Gpio;
 
 
-module.exports = class led {
+module.exports = class Led {
 
   constructor(pin) {
     this.gpio = new Gpio(pin, { mode: Gpio.OUTPUT });

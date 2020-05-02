@@ -18,7 +18,7 @@ const scaleIndex = {
   'si': 11
 };
 
-module.exports = class buzzer {
+module.exports = class Buzzer {
 
   constructor(pin) {
     this.baseLength = 300;

@@ -8,20 +8,18 @@ const playlist = {
   oni_no_pants_2: song_oni_no_pants_2,
 };
 
-module.exports = class music {
+module.exports = class Music {
 
   constructor(buzzer) {
     this.buzzer = buzzer;
   }
 
   play(songTitle) {
-    setTimeout(() => {
-      const song = playlist[songTitle];
-      this.buzzer.setBaseLength(song.baseLength);
-      song.melody.forEach(sound => {
-        this.buzzer.makeSound(sound.scale, sound.level, sound.length);
-      });
-    }, 10);
+    const song = playlist[songTitle];
+    this.buzzer.setBaseLength(song.baseLength);
+    song.melody.forEach(sound => {
+      this.buzzer.makeSound(sound.scale, sound.level, sound.length);
+    });
   }
 
   playAny() {
