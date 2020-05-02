@@ -31,9 +31,6 @@ const onPackageDelivered = () => {
 };
 
 
-resetState();
-
-
 app.get("/", (req, resp) => {
   resp.sendStatus(200);
 });
@@ -56,3 +53,6 @@ app.get("/led/blink", (req, resp) => {
 app.listen(3000, () => {
   console.log("Listening on port 3000");
 });
+
+
+resetState();
