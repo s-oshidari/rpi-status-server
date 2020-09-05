@@ -1,13 +1,17 @@
+const song_okina_kuri = require('./songs/okina_kuri');
+const song_yakiimo = require('./songs/yakiimo');
 const song_karada_dandan = require('./songs/karada_dandan');
 const song_station = require('./songs/station');
 const song_oni_no_pants_1 = require('./songs/oni_no_pants_1');
 const song_oni_no_pants_2 = require('./songs/oni_no_pants_2');
 
 const playlist = {
+  okina_kuri: song_okina_kuri,
+  yakiimo: song_yakiimo,
   karada_dandan: song_karada_dandan,
   // station: song_station,
-  // oni_no_pants_1: song_oni_no_pants_1,
-  // oni_no_pants_2: song_oni_no_pants_2,
+  oni_no_pants_1: song_oni_no_pants_1,
+  oni_no_pants_2: song_oni_no_pants_2,
 };
 
 module.exports = class Music {
