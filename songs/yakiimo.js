@@ -41,7 +41,8 @@ module.exports = {
     { scale: 'so', level: 1, length: 1 },
     { scale: 'mi', level: 1, length: 3 },
     { scale: 'do', level: 2, length: 1 },
-    { scale: 'ra', level: 1, length: 7 },
+    { scale: 'ra', level: 1, length: 4 },
+    { scale: 're', level: 2, length: 3 },
     { scale: 'do', level: 2, length: 1 },
 
     { scale: 'si', level: 1, length: 3 },
