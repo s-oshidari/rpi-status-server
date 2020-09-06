@@ -6,12 +6,12 @@ const song_oni_no_pants_1 = require('./songs/oni_no_pants_1');
 const song_oni_no_pants_2 = require('./songs/oni_no_pants_2');
 
 const playlist = {
-  okina_kuri: song_okina_kuri,
   yakiimo: song_yakiimo,
+  okina_kuri: song_okina_kuri,
   karada_dandan: song_karada_dandan,
-  // station: song_station,
   oni_no_pants_1: song_oni_no_pants_1,
   oni_no_pants_2: song_oni_no_pants_2,
+  // station: song_station,
 };
 
 module.exports = class Music {
